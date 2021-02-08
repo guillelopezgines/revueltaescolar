@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cartell de la #RevoltaEscolar</title>
+  <meta name="description" content="Omple tots els camps i descarrega't la imatge del cartell.">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link href="/application.css?v=7" media="all" rel="stylesheet" />
+  <link href="/tool.css?v=7" media="all" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.71/jquery.csv-0.71.min.js"></script>
+  <script src="/js/html2canvas.min.js"></script>
+  <script src="/js/canvas2image.js"></script>
+  <script src="/js/sticky-kit.min.js"></script>
+  <script src="/application.js?v=7"></script>
+</head>
+<body class="tool">
+  <div class="layout">
+    <div class="setup">
+      <a href="/" class="back">⬅ Volver</a>
+      <h1>DESCÁRGATE EL CARTEL:</h1>
+      <p>Esta herramienta está en fase de pruebas. Rellena los campos y descárgate la imagen. Si tienes algún problema, por favor, contáctanos por <a href="mailto:eixample.respira@gmail.com">correo</a>.</p>
+      <div class="row">
+        <label>Acción reivindicativa:</label>
+        <input type="text" data-target=".poster .subtitle" placeholder="cortamos la calle Perú">
+      </div>
+      <div class="row">
+        <label>Dia:</label>
+        <div class="shopify-select">
+          <select data-target=".poster .date">
+            <option>Viernes 12 de febrero</option>
+            <option>Viernes 26 de febrero</option>
+            <option>Viernes 12 de marzo</option>
+            <option>Viernes 26 de marzo</option>
+          </select>
+          <svg class="shopify-select-icon" viewBox="0 0 24 24"><path d="M21 5.176l-9.086 9.353L3 5.176.686 7.647 12 19.382 23.314 7.647 21 5.176z"></path></svg>
+        </div>
+      </div>
+      <div class="row">
+        <label>Hora:</label>
+        <div class="shopify-select">
+          <select data-target=".poster .time">
+            <option>16.00</option>
+            <option>16.15</option>
+            <option selected>16.30</option>
+            <option>16.45</option>
+            <option>17.00</option>
+          </select>
+          <svg class="shopify-select-icon" viewBox="0 0 24 24"><path d="M21 5.176l-9.086 9.353L3 5.176.686 7.647 12 19.382 23.314 7.647 21 5.176z"></path></svg>
+        </div>
+      </div>
+      <div class="row">
+        <label>Localitzación:</label>
+        <input type="text" data-target=".poster .location" maxlength="38" placeholder="Perú entre Diputación y Mayor">
+      </div>
+      <div class="row">
+        <label>Duración:</label>
+        <div class="shopify-select">
+          <select data-target=".poster .duration">
+            <option>30 minutos</option>
+            <option>45 minutos</option>
+            <option>1 hora</option>
+            <option>2 horas</option>
+          </select>
+          <svg class="shopify-select-icon" viewBox="0 0 24 24"><path d="M21 5.176l-9.086 9.353L3 5.176.686 7.647 12 19.382 23.314 7.647 21 5.176z"></path></svg>
+        </div>
+      </div>
+      <div class="row">
+        <label>Logotipo entitades convocantes:</label>
+        <input type="file" accept="image/*" data-target=".summons-1" data-parent=".summons .images"/>
+        <input type="file" accept="image/*" data-target=".summons-2" data-parent=".summons .images"/>
+        <input type="file" accept="image/*" data-target=".summons-3" data-parent=".summons .images"/>
+        <input type="file" accept="image/*" data-target=".summons-4" data-parent=".summons .images"/>
+      </div>
+      <div class="row">
+        <label>Logotipo entitades que dan apoyo:</label>
+        <input type="file" accept="image/*" data-target=".support-1" data-parent=".support .images"/>
+        <input type="file" accept="image/*" data-target=".support-2" data-parent=".support .images"/>
+        <input type="file" accept="image/*" data-target=".support-3" data-parent=".support .images"/>
+        <input type="file" accept="image/*" data-target=".support-4" data-parent=".support .images"/>
+      </div>
+      <div class="row">
+        <a class="download" href="" data-action="download">Descarregar</a>
+      </div>
+    </div>
+    <div class="right">
+      <div class="container">
+        <div class="poster">
+          <img class="background" src="/images/base.png">
+          <div class="text subtitle">cortamos la calle Perú</div>
+          <div class="text info">
+            <b><span class="date">Viernes 12 de febrero</span></b><br>
+            <b><span class="time">16.30</span> h</b><br>
+            <span class="location">Perú entre Diputación y Mayor</span><br>
+            Duración: <span class="duration">30 minutos</span>
+          </div>
+          <div class="logos">
+            <div class="section summons">
+              <div class="text">Convoca:</div>
+              <div class="images">
+                <img src="/images/logo-afa.jpg" class="summons-1">
+              </div>
+            </div>
+            <div class="section support">
+              <div class="text" style="display: none;">Con el apoyo de:</div>
+              <div class="images">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </div>
+  </div>
+</body>
+</html>
