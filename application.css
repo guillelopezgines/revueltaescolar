@@ -104,6 +104,9 @@ p {
   margin: 20px auto;
   text-align: center;
 }
+p.big {
+  font-weight: bold;
+}
 p a {
   color: #231F20;
 }
@@ -287,6 +290,9 @@ p a {
     font-size: 18px;
     line-height: 32px;
     text-align: left;
+  }
+  p.big {
+    font-size: 22px;
   }
   .button {
     display: block;
