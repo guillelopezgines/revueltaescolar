@@ -282,21 +282,6 @@ p a {
   h2 {
     font-size: 26px;
   }
-  h2.section {
-    font-size: 20px;
-    text-align: left;
-  }
-  p {
-    font-size: 18px;
-    line-height: 32px;
-    text-align: left;
-  }
-  p.big {
-    font-size: 22px;
-  }
-  .button {
-    display: block;
-  }
   .button a{
     font-size: 20px;
     padding: 10px;
@@ -312,5 +297,23 @@ p a {
   .footer .logos img{
     height: 50px;
     margin: 5px 10px;
+  }
+}
+
+@media (max-width: 420px){
+  h2.section {
+    font-size: 20px;
+    text-align: left;
+  }
+  p {
+    font-size: 18px;
+    line-height: 32px;
+    text-align: left;
+  }
+  p.big {
+    font-size: 22px;
+  }
+  .button {
+    display: block;
   }
 }
