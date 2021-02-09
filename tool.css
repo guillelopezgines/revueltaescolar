@@ -28,7 +28,7 @@ body.tool {
 body.downloading .container{
   transform: scale(1);
   width: 1685px;
-  height: 2382px;
+  height: 2450px;
 }
 body.downloading .layout {
   display: block;
@@ -42,7 +42,7 @@ body.downloading .setup {
 }
 body.downloading .poster img {
   width: 1685px;
-  height: 2382px;
+  height: 2383px;
 }
 body.downloading {
   opacity: 0;
@@ -52,11 +52,11 @@ body.downloading {
   position: relative;
   background: white;
   width: 1685px;
-  height: 2382px;
+  height: 2450px;
 }
 .poster img {
-  height: 100%;
-  width: 100%;
+  width: 1685px;
+  height: 2383px;
   display: block;
 }
 .poster .subtitle {
@@ -91,8 +91,9 @@ body.downloading {
   top: 2040px;
   left: 74px;
   right: 74px;
-  bottom: 45px;
-  border-top: 2px solid #231F20;
+  bottom: 120px;
+  border-top: 2px solid #67A5B5;
+  padding-top: 20px;
   text-align: left;
   overflow: hidden;
   display: flex;
@@ -100,7 +101,6 @@ body.downloading {
   flex-wrap: nowrap;
 }
 .poster .logos .section{
-  padding-top: 30px;
   width: 100%;
 }
 .poster .logos .section.summons {
@@ -112,7 +112,6 @@ body.downloading {
   font-size: 46px;
   color: #67A5B5;
   text-transform: none;
-  color: #231F20;
 }
 .poster .logos .section .images{
   display: flex;
@@ -133,7 +132,27 @@ body.downloading {
 .poster .support-affac{
   order: 2;
 }
-
+.poster .url {
+  position: absolute;
+  top: 2350px;
+  left: 74px;
+  right: 74px;
+  bottom: 20px;
+  padding-top: 0px;
+  text-align: left;
+  overflow: hidden;
+}
+.poster .url .text{
+  font-family: 'Ursula';
+  font-size: 46px;
+  color: #67A5B5;
+  text-transform: none;
+  text-align: right;
+}
+.poster .url .text u{
+  text-decoration: none;
+  border-bottom: 2px solid;
+}
 .setup {
   padding: 20px;
   width: 100%;

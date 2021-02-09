@@ -52,7 +52,7 @@ $(document).ready(function() {
 
       var scale = window.is_touch_device && $(window).width() <= 500 ? 0.5 : 1;
       html2canvas(document.querySelector(".poster"), {scale: scale}).then(canvas => {
-        Canvas2Image.saveAsPNG(canvas, 2 * 1685, 2 * 2382);
+        Canvas2Image.saveAsPNG(canvas, 2 * 1685, 2 * 2450);
         $('body').removeClass('downloading');
       });
     });
