@@ -276,12 +276,6 @@ p a {
 }
 
 @media (max-width: 900px){
-  h1 {
-    font-size: 36px;
-  }
-  h2 {
-    font-size: 26px;
-  }
   .button a{
     font-size: 20px;
     padding: 10px;
@@ -301,6 +295,12 @@ p a {
 }
 
 @media (max-width: 420px){
+  h1 {
+    font-size: 42px;
+  }
+  h2 {
+    font-size: 26px;
+  }
   h2.section {
     font-size: 20px;
     text-align: left;
@@ -312,6 +312,9 @@ p a {
   }
   p.big {
     font-size: 22px;
+  }
+  .menu {
+    margin: 20px 0 40px;
   }
   .button {
     display: block;
