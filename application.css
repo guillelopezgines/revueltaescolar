@@ -48,12 +48,19 @@ body {
   text-align: center;
   margin: 0 auto;
 }
-.banner .lang {
-  /*float: right;*/
+.lang {
+  text-align: center;
+  margin: 20px 0;
 }
-.banner .lang a {
-  font-size: 20px;
-  padding: 0 5px;
+.lang a {
+  font: bold 24px/1.2 'oswald';
+  padding: 0 10px;
+  color: #231F20;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.lang a:hover {
+  text-decoration: underline;
 }
 .page {
   background: white;
@@ -65,7 +72,7 @@ body {
   margin: 0 auto;
 }
 h2 {
-  margin: 20px auto 10px;
+  margin: auto 0px;
   font: bold 30px/1.2 'oswald';
   text-align: center;
   text-decoration: underline;
