@@ -295,6 +295,9 @@ p a {
   h1 {
     font-size: 42px;
   }
+  .es h1 {
+    font-size: 37px;
+  }
   h2 {
     font-size: 26px;
   }
