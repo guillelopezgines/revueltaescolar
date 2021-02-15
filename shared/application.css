@@ -107,6 +107,9 @@ p.big {
 p a {
   color: #231F20;
 }
+p a.bold {
+  font-weight: bold;
+}
 .button {
   display: inline-block;
   cursor: pointer;
