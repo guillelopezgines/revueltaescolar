@@ -15,7 +15,7 @@
   <script src="/shared/js/html2canvas.min.js"></script>
   <script src="/shared/js/canvas2image.js"></script>
   <script src="/shared/js/sticky-kit.min.js"></script>
-  <script src="/shared/application.js"></script>
+  <script src="/shared/application.js?v=1"></script>
 </head>
 <body class="tool">
   <div class="layout">
@@ -24,14 +24,25 @@
       <h1>DESCÁRGATE EL CARTEL:</h1>
       <p>Esta herramienta está en fase de pruebas. Rellena los campos y descárgate la imagen. Si tienes algún problema, por favor, contáctanos por <a href="mailto:eixample.respira@gmail.com">correo</a>.</p>
       <div class="row">
-        <label>Acción reivindicativa:</label>
+        <label>Idioma:</label>
+        <div class="shopify-select">
+          <select data-location>
+            <option value="https://www.schoolrebellion.com/poster">English</option>
+            <option value="https://www.revueltaescolar.es/poster" selected>Español</option>
+            <option value="https://www.rebelliondesecoles.fr/poster">Français</option>
+            <option value="https://www.revoltaescolar.cat/poster">Català</option>
+          </select>
+          <svg class="shopify-select-icon" viewBox="0 0 24 24"><path d="M21 5.176l-9.086 9.353L3 5.176.686 7.647 12 19.382 23.314 7.647 21 5.176z"></path></svg>
+        </div>
+      </div>
+      <div class="row">
+        <label>Subtítulo:</label>
         <input type="text" data-target=".poster .subtitle" placeholder="cortamos la calle Perú">
       </div>
       <div class="row">
         <label>Dia:</label>
         <div class="shopify-select">
           <select data-target=".poster .date">
-            <option>Viernes 26 de febrero</option>
             <option>Viernes 12 de marzo</option>
             <option>Viernes 26 de marzo</option>
           </select>
@@ -116,10 +127,10 @@
     <div class="right">
       <div class="container">
         <div class="poster">
-          <img class="background" src="/images/base-es.png">
+          <img class="background" src="/images/base-es.png?v=1">
           <div class="text subtitle">cortamos la calle Perú</div>
           <div class="text info">
-            <b><span class="date">Viernes 26 de febrero</span></b><br>
+            <b><span class="date">Viernes 12 de marzo</span></b><br>
             <b><span class="time">16:30</span> h</b><br>
             <span class="location">Perú entre Diputación y Mayor</span><br>
             Duración: <span class="duration">30 minutos</span>
