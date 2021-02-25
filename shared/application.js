@@ -10,6 +10,9 @@ $(document).ready(function() {
   };
 
   $(document)
+    .on('change', 'select[data-location]', function(e){
+      window.location.href = $(this).val();
+    })
     .on('keyup', '[type=text][data-target]', function(e){
       var el = $(this).attr('data-target');
       $(el).html($(this).val());
