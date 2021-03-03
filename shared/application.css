@@ -325,6 +325,12 @@ p a.bold {
   p.big {
     font-size: 22px;
   }
+  .talls li {
+    margin-left: 30px;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 5px;
+  }
   .menu {
     margin: 20px 0 40px;
   }

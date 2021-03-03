@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Por unos entornos escolares seguros y pacificados! Únete a la #RevueltaEscolar!</title>
+  <meta name="description" content="Diferentes Asociaciones de Famílias de Alumnos (AFA) en Cataluña, en colaboración con entidades vecinales, estamos realizando cada 15 días cortes de tráfico los viernes a la salida del colegio para reclamar una mayor pacificación y seguridad de los entornos escolares, menos contaminación y menos ruido.">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <meta property="og:title" content="Per uns entorns segurs y pacificats!"/>
+  <meta property="og:description" content="Diferentes Asociaciones de Famílias de Alumnos (AFA) en Cataluña, en colaboración con entidades vecinales, estamos realizando cada 15 días cortes de tráfico los viernes a la salida del colegio para reclamar una mayor pacificación y seguridad de los entornos escolares, menos contaminación y menos ruido. ¡Haz que tu AFA o AMPA se sume!">
+  <meta property="og:url" content="https://www.revueltaescolar.es"/>
+  <meta property="og:image" content="https://www.revueltaescolar.es/images/sharing.jpg?v=1"/>
+  <meta property="og:site_name" content="revueltaescolar.es"/>
+  <meta property="og:type" content="website"/>
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Por unos entornos escolares seguros y pacificados! Únete a la #RevueltaEscolar!">
+  <meta name="twitter:image" content="https://www.revueltaescolar.es/images/sharing.jpg?v=1">
+  <meta name="twitter:description" content="Diferentes Asociaciones de Famílias de Alumnos (AFA) en Cataluña, en colaboración con entidades vecinales, estamos realizando cada 15 días cortes de tráfico los viernes a la salida del colegio para reclamar una mayor pacificación y seguridad de los entornos escolares, menos contaminación y menos ruido. ¡Haz que tu AFA o AMPA se sume!">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link href="/shared/application.css?v=3" media="all" rel="stylesheet" />
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+</head>
+<body class="index es">
+  <div class="page">
+    <div class="inner">
+      <div id='map' style='margin-top: 20px; width: 100%; height: 600px; border: 0;'></div>
+      <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiZ3VpbGxlbG9wZXoiLCJhIjoiY2o4b21mYjA3MDVhYzJ3bm5rZThlbTlheiJ9.A7wGAsa9j-69qgohfQ_pBA';
+        var pitch = 50;
+        var prebearing = -55;
+        var bearing = -45;
+        var zoom = 11;
+        var color = "#ffcc00";
+        var map = new mapboxgl.Map({
+          container: 'map',
+          style: 'mapbox://styles/mapbox/light-v10',
+          center: [-3.703665, 40.416685],
+          zoom: zoom,
+          pitch: pitch,
+          // bearing: prebearing
+        }).on('load', function(){
+          var features = [
+            {
+              'type': 'Feature',
+              'properties': {
+                'color': color,
+                'title': "Miguel de Unamuno",
+                'anchor': 'bottom'
+              },
+              'geometry': {
+                'type': 'Point',
+                'coordinates': [-3.693505, 40.394202]
+              }
+            },
+            {
+              'type': 'Feature',
+              'properties': {
+                'color': color,
+                'title': "Fernando el Católico",
+                'anchor': 'top'
+              },
+              'geometry': {
+                'type': 'Point',
+                'coordinates': [-3.7094816, 40.4340243]
+              }
+            },
+            {
+              'type': 'Feature',
+              'properties': {
+                'color': color,
+                'title': "Asunción Rincón",
+                'anchor': 'bottom'
+              },
+              'geometry': {
+                'type': 'Point',
+                'coordinates': [-3.7112094, 40.4399037]
+              }
+            },
+            {
+              'type': 'Feature',
+              'properties': {
+                'color': color,
+                'title': "Menéndez Pelayo",
+                'anchor': 'bottom'
+              },
+              'geometry': {
+                'type': 'Point',
+                'coordinates': [-3.6919064, 40.4051219]
+              }
+            },
+            {
+              'type': 'Feature',
+              'properties': {
+                'color': color,
+                'title': "Rufino Blanco",
+                'anchor': 'bottom'
+              },
+              'geometry': {
+                'type': 'Point',
+                'coordinates': [-3.702449, 40.434902]
+              }
+            },
+            {
+              'type': 'Feature',
+              'properties': {
+                'color': color,
+                'title': "Lope de Vega",
+                'anchor': 'bottom'
+              },
+              'geometry': {
+                'type': 'Point',
+                'coordinates': [-3.7237027, 40.3944929]
+              }
+            },
+            {
+              'type': 'Feature',
+              'properties': {
+                'color': color,
+                'title': "Arcangel",
+                'anchor': 'bottom'
+              },
+              'geometry': {
+                'type': 'Point',
+                'coordinates': [-3.6724718, 40.4088779]
+              }
+            },
+            {
+              'type': 'Feature',
+              'properties': {
+                'color': color,
+                'title': "Juan Zaragüeta",
+                'anchor': 'bottom'
+              },
+              'geometry': {
+                'type': 'Point',
+                'coordinates': [-3.6310137, 40.4712337]
+              }
+            }
+          ];
+          map
+            .addSource('schools-source', {
+              'type': 'geojson',
+              'data': {
+                'type': 'FeatureCollection',
+                'features': features
+              }
+            })
+            .addLayer({
+              'id': 'schools',
+              'type': 'circle',
+              'source': 'schools-source',
+              'paint': {
+                'circle-radius': 6,
+                'circle-color': ["get", "color"]
+              }
+            })
+            .addLayer({
+              'id': 'points',
+              'type': 'symbol',
+              'source': 'schools-source',
+              'layout': {
+                // 'text-allow-overlap': true,
+                'text-field': ['get', 'title'],
+                'text-font': [
+                  "Open Sans Regular",
+                  "Arial Unicode MS Regular"
+                ],
+                'text-radial-offset': 0.7,
+                'text-anchor': ['get', 'anchor'],
+                'text-size': 14
+              }
+            });
+            var bounds = new mapboxgl.LngLatBounds();
+            features.forEach(function (item, index) {
+              bounds.extend([item.geometry.coordinates[0], item.geometry.coordinates[1]])
+            });
+            // map.fitBounds(bounds, {zoom: zoom + 1});
+            // map.fitBounds(bounds, {bearing: bearing, zoom: zoom + 2 });
+            map.flyTo({
+              zoom: zoom + 0.5,
+              speed: 0.05,
+              // bearing: bearing
+            })
+        });
+      </script>  
+    </div>
+  </div>
+</body>
+</html>
